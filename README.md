@@ -10,6 +10,7 @@ This algorithm will do testing of
 1. Speed of a given language
 1. Readability of the code
 1. How concurrency looks, and works if available
+1. To as much as posible only use base language constructs
 1. Guage how useful tech might be in your case
     * Current Tech that will be in repo
         * [gRPC](https://www.grpc.io) : a blazing fast rpc framework with cross language support
