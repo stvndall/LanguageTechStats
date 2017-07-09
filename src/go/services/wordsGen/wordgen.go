@@ -7,7 +7,7 @@ func FindSequence(count int) []string {
 	fullCopy := count / length
 	left := count % length
 	returning := words[:left]
-	for i := 0; i <= fullCopy; i++ {
+	for i := 0; i < fullCopy; i++ {
 		returning = append(returning, words...)
 	}
 	return returning
