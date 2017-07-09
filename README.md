@@ -30,7 +30,7 @@ This algorithm is designed to test
 | _fibIdx_ | **_input_** | Given a number Find the index in fibonacci, or the previous index if not found |
 | _words_  | **_fibIdx_** | Generate seeded list of words to the count of above index | 
 | _max_ | **_words_** | Count the letter that appears the most | 
-| _min_ | **_words_** | Coutn the letter that appears the least | 
+| _min_ | **_words_** | Count the letter that appears the least | 
 | _factors_| **_fibIdx_** | find the [prime factors](https://www.mathsisfun.com/prime-factorization.html) | 
 | _average_ | **_max_**,  **_min_**, **_factors_** | Find the average |
 | | | return **_words_**, **_factors_**, **_average_** to caller |
