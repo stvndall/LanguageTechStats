@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"log"
 	"github.com/stvndall/languagetechstats/src/go/services/average"
+	
 )
 // Request is the data type that will mashal the numbers to be averaged
 type Request struct{

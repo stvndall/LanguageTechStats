@@ -9,9 +9,9 @@ import (
 	"github.com/gorilla/mux"
 )
 func main(){
-	 router := mux.NewRouter().StrictSlash(true)
-	  router.HandleFunc("/{numbers}", factorise)
-		log.Fatal(http.ListenAndServe(":2500", router))
+	router := mux.NewRouter().StrictSlash(true)
+	router.HandleFunc("/{numbers}", factorise)
+	log.Fatal(http.ListenAndServe(":2500", router))
 }
 
 func factorise(w http.ResponseWriter, r *http.Request) {
@@ -20,6 +20,5 @@ func factorise(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w,"%v",err)
 		return
 	}
-	
 	fmt.Fprintf(w, "%v",factors.PrimeFactors(number) )
 }
