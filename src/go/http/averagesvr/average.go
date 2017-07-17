@@ -16,6 +16,7 @@ func main(){
 		decoder := json.NewDecoder(r.Body)
 		var t Request
 		err := decoder.Decode(&t)
+		defer r.Body.Close()
 		if(err != nil){
 			log.Fatal(err)
 		}
