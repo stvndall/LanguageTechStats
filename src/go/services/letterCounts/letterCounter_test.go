@@ -2,6 +2,7 @@ package letterCounts
 
 import (
 	"testing"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestCountLettersWhenCountAlreadyExists(t *testing.T) {
@@ -9,34 +10,29 @@ func TestCountLettersWhenCountAlreadyExists(t *testing.T) {
 	letters := make(map[rune]int)
 	letters['A'] = 4
 	countLetters('A', letters)
-	if letters['A'] != expected {
-		t.Errorf("expected count to be %d but got %d instead", expected, letters['A'])
-	}
+	assert.Equal(t, letters['A'], expected)
 }
 
 func TestCountLetters_WhenCountDoesNotExist(t *testing.T) {
-	expectedB := 1
+	expectedB := 2
 	expectedA := 4
 	letters := make(map[rune]int)
 	letters['A'] = 4
 	countLetters('B', letters)
-	if letters['A'] != expectedA {
-		t.Errorf("expected for A count to be %d but got %d instead", expectedA, letters['A'])
-	}
-	if letters['B'] != expectedB {
-		t.Errorf("expected for B count to be %d but got %d instead", expectedB, letters['B'])
-	}
+	countLetters('B', letters)
+	assert.Equal(t,  letters['A'], expectedA)
+	assert.Equal(t,  letters['B'], expectedB)
+	
 }
 
 func TestCountLetterInSingleWord(t *testing.T) {
-	t.Errorf("starting")
-
 	words := make(chan string, 1)
 	words <- "aabc"
 	close(words)
 	letterCount := countLettersInWord(words)
-	if letterCount['a'] != 2 {
-		t.Errorf("A was expected 2 but got %d", letterCount['a'])
-	}
+	assert.Equal(t, letterCount['a'], 2, "" )
+	assert.Equal(t, letterCount['b'], 1, "" )
+	assert.Equal(t, letterCount['c'], 1, "" )
+	
 
 }
