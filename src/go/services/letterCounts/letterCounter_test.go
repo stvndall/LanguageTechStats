@@ -32,7 +32,5 @@ func TestCountLetterInSingleWord(t *testing.T) {
 	letterCount := countLettersInWord(words)
 	assert.Equal(t, letterCount['a'], 2, "" )
 	assert.Equal(t, letterCount['b'], 1, "" )
-	assert.Equal(t, letterCount['c'], 1, "" )
-	
-
+	assert.Equal(t, letterCount['c'], 1, "expected run c to have a count of 1" )
 }
