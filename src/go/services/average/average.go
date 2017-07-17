@@ -5,8 +5,8 @@ import (
 )
 
 
-// averageNumbers will return the average for the array passed in
-func averageNumbers(allNumbers []int ) (average float64, err error){
+// Numbers will return the average for the array passed in
+func Numbers(allNumbers []int ) (average float64, err error){
 if len(allNumbers) == 0{
 	err = errors.New("Require at least one number calculate an average")
 	return
