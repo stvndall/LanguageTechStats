@@ -1,0 +1,16 @@
+#!/bin/bash 
+# Version: 1.0.0
+# Author: codeRISE ( https://coderise.io )
+#
+#  This script gets committed to your repository and can be used for executing AWS specific
+#  commands. The script gets executed as part of the build step.
+#  The awscli is provided by environment. Set AWS credentials in your codeRISE account
+#  (under settings) or export them here for private repositories.
+#
+
+# example
+#
+# NAME=test-lambda
+# REGION=us-east-1
+#
+# aws lambda update-function-code --function-name $NAME --zip-file fileb://$NAME.zip  --region $REGION
