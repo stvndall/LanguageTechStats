@@ -3,7 +3,7 @@
 This is a repo that should help guide people to which language[s] to use for a new microservice project. 
 
 I Do not know if I am always following best practices for a given language
-Pull requests for when you :rage: are always welcome :tada:
+Pull requests if a better way is known, are always welcome :tada:
 
 ## The Goal
 
@@ -37,3 +37,6 @@ This algorithm is designed to test
 | _factors_| **_fibIdx_** | find the [prime factors](https://www.mathsisfun.com/prime-factorization.html) | 
 | _average_ | **_max_**,  **_min_**, **_factors_** | Find the average |
 | | | return **_words_**, **_factors_**, **_average_** to caller |
+
+
+At a later point, actual web frameworks will be tested as well, to show variety in a given language
